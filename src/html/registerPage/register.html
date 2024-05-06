@@ -1,0 +1,92 @@
+<section class="register">
+  <div class="container">
+    <div class="register__wrapper">
+      <div class="register__content">
+  
+        <div class="register__left-register">
+          <picture>
+            <source
+              srcset="
+                img/modal-register/modal-register@1x.avif 1x,
+                img/modal-register/modal-register@2x.avif 2x
+              "
+              type="image/avif"
+            />
+            <source
+              srcset="
+                img/modal-register/modal-register@1x.webp 1x,
+                img/modal-register/modal-register@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              src="img/modal-register/modal-register@1x.png"
+              srcset="img/modal-register/modal-register@2x.png 2x"
+              width="380"
+              height="580"
+              alt="StydCity Students"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+
+        <form class="register__form-register">
+          <div class="register__form-top">
+            <h3 class="register__form-title title">Регистрация</h3>
+            <div class="register__form-enter">
+              <p>Зарегистрированы?</p>
+              <a href="/login.html" class="register__login-btn link">Войти</a>
+            </div>
+          </div>
+
+          <div class="register__input-wrapper-register register__input-wrapper-register--mail">
+            <input type="mail" class="register__input-register" placeholder="Ваш e-mail" />
+            <span class="register__span-info">
+              <span class="register__span-info-text">
+                Разрешенные почтовые домены: @mail.ru, @inbox.ru, @list.ru, @bk.ru, @ya.ru, @yandex.ru, @icloud.com, @gmail.com, @rambler.ru, @yahoo.com
+              </span>
+            </span>
+          </div>
+  
+          <div class="register__input-wrapper-register">
+            <input type="text" class="register__input-register" placeholder="Введите реферальный код на 500 рублей"/>
+          </div>
+  
+          <div class="register__info-register">
+            <p>
+              Реферальный код спрашивайте у одногруппников. Избегайте упоминания
+              сайта и реферального кода в официальных сообществах - за это могут
+              забанить в группах.
+            </p>
+          </div>
+  
+          <div class="register__register-policy">
+            <label class="register__register-option">
+              <input
+                class="register__register-input"
+                type="checkbox"
+                name="checkbox"
+              />
+              <span class="register__register-box">
+                <svg>
+                  <use xlink:href="img/sprite.svg#check"></use>
+                </svg>
+              </span>
+              <span class="register__register-text">
+                Я ознакомился с правилами, политикой конфиденциальности и принимаю их условия.
+              </span>
+            </label>
+          </div>
+  
+          <div class="register__register-bottom">
+            <button class="register__register-btn main__button" type="submit">
+              Отправить пароль
+            </button>
+  
+            <a href="/recovery.html" class="register__register-recovery modal__recovery-btn" >Восстановление</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,82 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.section {
+  margin-top: 12rem;
+
+  @media (max-width: em(1200)) {
+    margin-top: 10rem;
+  }
+
+  @media (max-width: em(992)) {
+    margin-top: 6rem;
+  }
+
+  @media (max-width: em(767)) {
+    margin-top: 5rem;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: fluid-font(4rem, 2rem);
+  line-height: 115%;
+  color: var(--clr-default-600);
+}
+
+.text {
+  p {
+    line-height: 145%;
+    color: var(--clr-default-400);
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.link {
+  text-decoration: underline;
+  color: var(--clr-primary-400);
+  transition: color var(--transition);
+
+  &:hover {
+    color: var(--clr-primary-500);
+    transition: color var(--transition);
+  }
+}
+
+.main__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  min-width: 19rem;
+  min-height: 5.5rem;
+  font-size: fluid-font(1.8rem, 1.6rem);
+  line-height: 120%;
+  color: var(--clr-default-100);
+  background-color: var(--clr-default-600);
+  transition: box-shadow var(--transition);
+
+  @media (max-width: em(575)) {
+    min-height: 5rem;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+      transition: box-shadow var(--transition);
+    }
+  }
+}

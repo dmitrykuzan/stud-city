@@ -1,0 +1,122 @@
+.steps {
+
+  &__wrapper {
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 6rem;
+    text-align: center;
+
+    @media (max-width: em(575)) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+
+      @media (max-width: em(575)) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    @media (max-width: em(767)) {
+      flex-direction: column-reverse;
+      align-items: initial;
+    }
+  }
+
+  &__item-image {
+    margin-right: 2rem;
+    max-width: 48rem;
+
+    @media (max-width: em(992)) {
+      min-width: 30rem;
+      max-width: initial;
+    }
+
+    @media (max-width: em(767)) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__item-info {
+    max-width: 48rem;
+
+    @media (max-width: em(767)) {
+      margin-bottom: 3rem;
+      max-width: initial;
+    }
+  }
+
+  &__number {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-size: fluid-font(4.4rem, 2rem);
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: -3.5rem;
+      top: 50%;
+      z-index: -1;
+      border-radius: 50%;
+      width: 5.4rem;
+      height: 5.4rem;
+      background-color: var(--clr-primary-600);
+      transform: translateY(-50%);
+    }
+
+    @media (max-width: em(575)) {
+      margin-bottom: 2rem;
+
+      &:before {
+        right: -2.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 2rem;
+    max-width: 38rem;
+    font-weight: 700;
+    font-size: fluid-font(3.2rem, 2rem);
+    line-height: 115%;
+
+    @media (max-width: em(992)) {
+      max-width: initial;
+    }
+  }
+
+  &__item-text {
+  }
+
+  &__button {
+    margin-top: 5rem;
+    max-width: 24rem;
+
+    @media (max-width: em(767)) {
+      margin-top: 3rem;
+    }
+  }
+}
+

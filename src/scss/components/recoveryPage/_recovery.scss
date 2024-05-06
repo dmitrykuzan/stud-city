@@ -1,0 +1,23 @@
+.recovery {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+
+
+  &__register-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__register-btn {
+    margin-bottom: 3rem;
+    max-width: 23rem;
+
+    @media (max-width: em(575)) {
+      max-width: initial;
+    }
+  }
+
+  .register__register-recovery {
+    margin-right: 2rem;
+  }
+}
